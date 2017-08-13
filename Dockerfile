@@ -1,9 +1,9 @@
 FROM alpine:3.5
 LABEL maintainer mig@aon.at
 
-ENV DOKUWIKI_VERSION 2017-02-19b
-ENV MD5_CHECKSUM ea11e4046319710a2bc6fdf58b5cda86
-ENV TIMEZONE Europe/Vienna
+ENV DOKUWIKI_VERSION 2017-02-19c
+ENV MD5_CHECKSUM 324ae70a6322057604edc04b39c9b334
+ENV TIMEZONE America/New_York
 
 RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.5/main/ add \
 libressl2.4-libssl tzdata && \

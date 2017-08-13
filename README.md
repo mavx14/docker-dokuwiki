@@ -11,10 +11,11 @@ with some improvements:
   * It creates a volume "lib/plugins" for easy add|remove|backup plugins
   * It creates a volume "var/dokuwiki-backup" witch contains a week of daily Backups per cron
   * Adding timezone support \
-    Change the ENV TIMEZONE=Europe/Vienna in the Dockerfile to your needs
+    Change the ENV TIMEZONE=America/New_York in the Dockerfile to your needs
   * Adding ntpd support via supervisor
   * ~~Upgrade to the latest (Bugfix) Release 2017-02-19a “Frusterick Manners”~~
-  * Upgrade to the latest (Bugfix) Release 2017-02-19b “Frusterick Manners”
+  * ~~Upgrade to the latest (Bugfix) Release 2017-02-19b “Frusterick Manners”~~
+  * Upgrade to the latest (Bugfix) Release 2017-02-19c “Frusterick Manners”
   * Upgrade Alpine Linux to latest stable version v3.5
   * (NEW) php upload limit set to 64MB \
     Change the value to your needs in the file upload.ini
