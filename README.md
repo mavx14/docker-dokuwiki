@@ -13,9 +13,7 @@ with some improvements:
   * Adding timezone support \
     Change the ENV TIMEZONE=America/New_York in the Dockerfile to your needs
   * Adding ntpd support via supervisor
-  * ~~Upgrade to the latest (Bugfix) Release 2017-02-19a “Frusterick Manners”~~
-  * ~~Upgrade to the latest (Bugfix) Release 2017-02-19b “Frusterick Manners”~~
-  * Upgrade to the latest (Bugfix) Release 2017-02-19c “Frusterick Manners”
+  * Upgrade to the latest (Bugfix) Release 2017-02-19c “Frusterick Manners” ([source](https://download.dokuwiki.org/archive))
   * Upgrade Alpine Linux to latest stable version v3.5
   * (NEW) php upload limit set to 64MB \
     Change the value to your needs in the file upload.ini
