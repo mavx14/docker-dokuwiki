@@ -13,6 +13,7 @@ php7 php7-fpm php7-gd php7-session php7-zlib php7-openssl php7-xml nginx supervi
 RUN mkdir -p /run/nginx && \
 mkdir -p /var/www /var/dokuwiki-storage/data && \
 mkdir -p /var/www /var/dokuwiki-backup && \
+mkdir -p /var/www /var/dokuwiki-storage/templates && \
 cd /var/www && \
 curl -O -L "https://download.dokuwiki.org/src/dokuwiki/dokuwiki-$DOKUWIKI_VERSION.tgz" && \
 echo "$MD5_CHECKSUM  dokuwiki-$DOKUWIKI_VERSION.tgz" > dokuwiki-$DOKUWIKI_VERSION.tgz.md5 && \
@@ -32,7 +33,9 @@ ln -s /var/dokuwiki-storage/data/media_meta /var/www/data/media_meta && \
 mv /var/www/data/attic /var/dokuwiki-storage/data/attic && \
 ln -s /var/dokuwiki-storage/data/attic /var/www/data/attic && \
 mv /var/www/conf /var/dokuwiki-storage/conf && \
-ln -s /var/dokuwiki-storage/conf /var/www/conf  
+ln -s /var/dokuwiki-storage/conf /var/www/conf && \
+mv /var/www/lib/tpl /var/dokuwiki-storage/templates && \
+ln -s /var/dokuwiki-storage/templates /var/www/lib/tpl
 
 
 ADD nginx.conf /etc/nginx/nginx.conf
